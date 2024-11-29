@@ -29,11 +29,12 @@ const generatePhrase = () => {
     const noun = nouns[Math.floor(Math.random() * nouns.length)];
     const adverb = adverbs[Math.floor(Math.random() * adverbs.length)];
     const context = contexts[Math.floor(Math.random() * contexts.length)];
-    const phrase = `${verb} your ${adjective} ${noun} ${adverb} ${context}`
+    const phrase = `Daily Productivity Phrase: ${verb} your ${adjective} ${noun} ${adverb} ${context}.`
     return phrase
 }
 
-console.log(generatePhrase());
+let myPhrase = generatePhrase();
+console.log(myPhrase);
 
 /*weekend phrase to motivate yourself */
 
@@ -61,4 +62,4 @@ const weekendPhrase = {
 
 const motivationalStart = weekendPhrase.motivationalStarts[Math.floor(Math.random() * weekendPhrase.motivationalStarts.length)]
 const inspirationalEnd = weekendPhrase.inspirationalEndings[Math.floor(Math.random() * weekendPhrase.inspirationalEndings.length)]
-console.log(motivationalStart, inspirationalEnd)
+console.log('Weekend Productivity Phrase:', motivationalStart, inspirationalEnd)
