@@ -34,3 +34,31 @@ const generatePhrase = () => {
 }
 
 console.log(generatePhrase());
+
+/*weekend phrase to motivate yourself */
+
+const weekendPhrase = {
+    motivationalStarts: [
+        'You are capable of more than you think',
+        'Success starts with the first step',
+        'Progress, not perfection, is the goal',
+        'Small steps lead to big results',
+        'Focus on what matters most',
+        'Every challenge is an opportunity',
+        'Discipline is the bridge to success',
+        'Consistency beats intensity',
+        'Dream big, act small',
+        'Your efforts will pay off'
+    ],
+    inspirationalEndings: [
+        'and stay focused on the journey.', 'and accomplish your goals.', 
+        'and unlock your potential.', 'and create your legacy.', 
+        'and embrace the challenge.', 'and push boundaries.', 
+        'and set new standards.', 'and make the impossible possible.', 
+        'and leave a mark.', 'and stay consistent.'
+    ]
+};
+
+const motivationalStart = weekendPhrase.motivationalStarts[Math.floor(Math.random() * weekendPhrase.motivationalStarts.length)]
+const inspirationalEnd = weekendPhrase.inspirationalEndings[Math.floor(Math.random() * weekendPhrase.inspirationalEndings.length)]
+console.log(motivationalStart, inspirationalEnd)
